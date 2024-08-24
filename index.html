@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sign_up_form/styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="./index.js" defer></script>
+    <title>Project: Sign-up form</title>
+</head>
+
+<body>
+    <div class="bodyContainer">
+        <div class="bckImgContainer">
+            <img class="logo" src="../sign_up_form/media/odin-project-logo.png" alt="logo">
+        </div>
+        <div class="formContainer">
+            <div class="items1">
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams.</p>
+
+                <p id="item1-signUP">Sign up now to get started</p>
+                <p id="item-lastText">you know what you want</p>
+            </div>
+            <form action="" method="post" onsubmit="return formValidation()" id="createAccountForm" target="_blank">
+                <div class="items2">
+                    <p>Let's do this</p>
+                    <div class="inputContainer">
+                        <div class="leftSide">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="first-name">
+                            <span id="firstName-error" class="error-message"></span>
+
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" required>
+                            <span id="email-error" class="error-message"></span>
+
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" r>
+                            <span id="password-error" class="error-message"></span>
+                        </div>
+                        <div class="rightSide">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name">
+                            <span id="lastName-error" class="error-message"></span>
+
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" name="phone-number" id="phone-number">
+                            <span id="phone-error" class="error-message"></span>
+
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" name="confirm-password" id="confirm-password">
+                            <span id="confirmPassword-error" class="error-message"></span>
+                        </div>
+
+
+                    </div>
+                    <div class=" button-container">
+                        <button type="submit">Create Account</button>
+                        <p>Already have an account ? <span> <a href="">Log in</a> </span> </p>
+                    </div>
+                </div>
+
+            </form>
+            <div class="items3">
+                <p>&copy Made by Galekwan Sango</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

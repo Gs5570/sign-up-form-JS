@@ -1,0 +1,142 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif, system-ui;
+}
+
+.bodyContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 200px;
+  gap: 30px;
+}
+
+.bckImgContainer {
+  position: relative;
+  flex: 1;
+  background-image: url('../media/pavlov-hacking.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  width: 100%;
+  padding-bottom: 3%;
+  box-shadow: 0 8px 6px -6px rgb(202, 202, 202);
+}
+
+input {
+  width: 70%;
+  height: 40px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid orange;
+  box-shadow: rgba(248, 128, 0, 0.777) 0px 3px 8px;
+}
+
+.leftSide,
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.items1 {
+  background-color: rgb(247, 247, 247);
+  padding-left: 25px;
+  padding-top: 7%;
+}
+
+.items1 > p {
+  font-size: 30px;
+}
+
+#item1-signUP {
+  padding-bottom: 3%;
+}
+
+#item-lastText {
+  padding-bottom: 5%;
+}
+
+.items2 > p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+form {
+  padding-left: 25px;
+}
+
+button {
+  padding: 18px;
+  margin-top: 20px;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.items3 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .bodyContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bckImgContainer {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    position: static; /* reset position */
+  }
+  .logo {
+    position: relative;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 3px solid orange;
+  }
+  .inputContainer {
+    flex-direction: column;
+  }
+}
